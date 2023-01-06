@@ -18,7 +18,13 @@ export default function Home() {
       </nav> */}
       <section className={styles.hero}>
         <div className={styles.introContainer}>
-          <p>ESMERALDAS</p>
+          <div className={styles.introInfo}>
+            <p>ESMERALDAS</p>
+            <div className={styles.nav}>
+              <div>Menu</div>
+              <div>Contact</div>
+            </div>
+          </div>
         </div>
         <div className={styles.imageContainer}>
           <img
@@ -29,18 +35,12 @@ export default function Home() {
           {/* <Image className={styles.watch} src={"/cake.jpg"} alt="cake" fill /> */}
         </div>
       </section>
-      {/* <section className={styles.hero}>
-        <div className={styles.imageContainer}>
-          <img
-            className={styles.image}
-            src="https://images.unsplash.com/photo-1602419260650-697189b3d7db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-          ></img>
-        </div>
-      </section> */}
       <main className={styles.main}>
         <section className={styles.cakeInfo}>
           <h1>
-            Welcome to <span>CAKE HEAVEN</span>
+            Welcome to
+            <br className={styles.lineBreak}></br>
+            <span>CAKE HEAVEN</span>
           </h1>
           <h2>Voted Best Cakes in SoCal, 2022</h2>
         </section>
@@ -86,8 +86,8 @@ export default function Home() {
               />
             </div>
             <div className={styles.cakeBox}>
-              <h3>Orange Zest 10 Layer </h3>
-              <p>10 Layers of Creme, orange zest, and love.</p>
+              <h3>Orange Zest 12 Layer </h3>
+              <p>12 Layers of Creme, orange zest, and love.</p>
             </div>
           </div>
           <div className={styles.cakes}>
@@ -108,7 +108,11 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        <div>Menu</div>
+        <div>About</div>
+        <div>Contact</div>
+      </footer>
     </div>
   );
 }
